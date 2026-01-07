@@ -1,0 +1,53 @@
+.title{
+    color: white;
+    text-align: center;
+}
+.one{
+    width: 700px;
+    margin-bottom: 20px;
+    margin: auto;
+    box-sizing: 5px;
+    user-select: none;
+    background-color: white;
+    border-radius: 5%;
+    overflow:auto;
+}
+.blank1{
+    height: 50px;
+}
+.blank2{
+    height: 50px;
+}
+.first{
+    width: 450px;
+    margin: auto;
+}
+.second{
+    width: 450px;
+    margin: auto;
+}
+.third{
+    width: 450px;
+    margin: auto;
+}
+.fourth{
+    width: 450px;
+    margin: auto;
+}
+.button{
+    box-sizing: border-box;
+    display: flex;
+    color: white;
+    background-color: #191970;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    margin: 45px auto;
+    margin-bottom: 30px;
+    top:50%;
+    border:none;
+    border-radius: 10px;
+}
+.text{
+    margin: auto;
+}

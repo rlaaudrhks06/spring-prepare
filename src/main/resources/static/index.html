@@ -1,10 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"/>
+    <title>마진계산기</title>
 </head>
-<body>
-<h1>New Page</h1>
+<body style="background-color: #191970;">
+<script src="./main.js"></script>
+<h2 class="title">마진 계산기</h2>
+<div class="one">
+    <div class="blank1"></div>
+    <div class="first">
+        <fieldset>
+            <legend>판매정보</legend>
+            <p>
+                <label>판매가격(원)
+                    <input type="text" id = 'sp' name="sp">
+                </label>
+            </p>
+            <p>
+                <label>배송비(원)
+                    <input type="text" id = 'de1' name="de1">
+                </label>
+            </p>
+        </fieldset>
+    </div>
+    <div class="second">
+        <fieldset>
+            <legend>매입정보</legend>
+            <p>
+                <label>매입가격(VAT 포함)(원)
+                    <input type="text" id = 'pur1' name="pur1">
+                </label>
+                <label><input type="checkbox">VAT 별도</label>
+            </p>
+            <p>
+                <label>매입운송비(원)
+                    <input type="text" id = 'pur2' name="pur2" >
+                </label>
+            </p>
+            <p>
+                <label>판매자 부담 배송비(원)
+                    <input type="text" id = 'de2' name="de2">
+                </label>
+            </p>
+        </fieldset>
+    </div>
+    <div class="third">
+        <fieldset>
+            <legend>마켓 수수료</legend>
+            <p>
+                <label>마켓연동 수수료(%)
+                    <input type="text" id = 'item1' name="item1">
+                </label>
+            </p>
+            <p>
+                <label>기타 수수료(%)
+                    <input type="text" id = 'item2' name="item2">
+                </label>
+            </p>
+            <p>
+                <label>기타 비용(원)
+                    <input type="text" id = 'other' name="other cost">
+                </label>
+            </p>
+        </fieldset>
+    </div>
+    <button type="submit" class="button" onclick="calculate()">
+        <p class="text">계산하기</p>
+    </button>
+    <div class = fourth>
+        <fieldset>
+            <legend>결과</legend>
+            <p>
+                <label> 마진(원)
+                    <div id='result1'></div>
+                </label>
+            </p>
+            <p>
+                <label> 마진율(%)
+                    <div id='result2'></div>
+                </label>
+            </p>
+        </fieldset>
+    </div>
+    <div class="blank2"></div>
+</div>
 </body>
 </html>
