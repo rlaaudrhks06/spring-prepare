@@ -10,7 +10,7 @@ public class Calculator {
                     return num1/num2;
                 }
                 else {
-                    return null;
+                    throw new IllegalArgumentException("0으로 나눌 수 없습니다.");
                 }
             case "+":
                 return num1+num2;
